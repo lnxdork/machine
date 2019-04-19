@@ -28,7 +28,8 @@ keyboard --vckeymap=us --xlayouts='us'
 lang en_US.UTF-8
 
 # Use a network install
-url --url="http://mirror.math.princeton.edu/pub/fedora/linux/releases/test/30_Beta/Workstation/x86_64/os/"
+# url --url="http://mirror.math.princeton.edu/pub/fedora/linux/releases/test/30_Beta/Workstation/x86_64/os/"
+url --url="http://mirror.math.princeton.edu/pub/fedora/linux/releases/29/Workstation/x86_64/os/"
 
 # Network information
 network  --hostname=localhost.localdomain --onboot yes --device eth0 --bootproto dhcp --ipv6 auto
