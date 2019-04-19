@@ -67,10 +67,12 @@ pwpolicy luks --minlen=6 --minquality=1 --notstrict --nochanges --notempty
 %end
 
 %post
-
 dnf groupinstall "base-x" -y
 dnf install -y git curl scrot neovim feh conky postfix rsyslog
 dnf install i3lock i3status dmenu i3 powerline xfce4-terminal bash-completion -y
+
+curl -sSL https://raw.githubusercontent.com/lnxdork/machine/master/20-intel.conf > /etc/X11/xorg.conf.d/20-intel.conf
+curl -sSL https://raw.githubusercontent.com/lnxdork/machine/master/xorg.conf > /etc/X11/xorg.conf
 
 echo "Authorized use only. All activity may be monitored and reported." > /etc/motd
 echo "Authorized use only. All activity may be monitored and reported." > /etc/issue
