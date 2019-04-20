@@ -88,6 +88,10 @@ sed -i 's/^PASS_WARN_AGE.*$/PASS_WARN_AGE 7/' /etc/login.defs
 echo "Unauthorized access is prohibited." > /etc/ssh/sshd_banner
 echo "Banner /etc/ssh/sshd_banner" >> /etc/ssh/sshd_config
 
+# make sure host is patched if install repo was not current
 dnf -y upgrade
+
+# make sure ssh service is up after reboot
+systemctl enable sshd.service
 
 %end
