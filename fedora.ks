@@ -70,7 +70,7 @@ pwpolicy luks --minlen=6 --minquality=1 --notstrict --nochanges --notempty
 
 %post
 dnf groupinstall "base-x" -y
-dnf install -y python3 git curl wget tar gpg scrot neovim feh conky postfix rsyslog
+dnf install -y python3 git curl wget tar bzip2 gpg scrot neovim feh conky postfix rsyslog
 dnf install i3lock i3status dmenu i3 powerline xfce4-terminal bash-completion -y
 
 # add config files to start X11
