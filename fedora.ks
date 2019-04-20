@@ -1,7 +1,8 @@
 #version=DEVEL
 zerombr
-ignoredisk --only-use=sda
-#autopart --type=lvm
+# ignoredisk --only-use=sda
+ignoredisk --only-use=vda
+# autopart --type=lvm
 
 # Partition clearing information
 clearpart --all --initlabel
