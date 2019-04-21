@@ -57,6 +57,7 @@ selinux --enforcing
 
 %packages --ignoremissing
 @^minimal-environment
+# @guest-agents
 %end
 
 %addon com_redhat_kdump --disable --reserve-mb='128'
