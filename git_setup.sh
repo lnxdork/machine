@@ -16,5 +16,5 @@ git commit -m "First commit"
 git remote add origin https://github.com/lnxdork/test.git
 git remote -v
 git push origin master
-git remove remove origin
+git remote remove origin
 git remote add origin git@github.com:lnxdork/test.git
