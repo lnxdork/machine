@@ -1,0 +1,4 @@
+#!/bin/bash
+
+alias pw="strings /dev/urandom | grep -o '[[:alnum:]]' | head -n 30 | tr -d '\n';"
+
