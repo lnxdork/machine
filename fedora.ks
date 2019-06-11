@@ -8,7 +8,7 @@ ignoredisk --only-use=vda
 clearpart --all --initlabel
 part /boot --fstype ext4 --size=250
 part swap --size=1024
-part pv.01 --size=1 --grow
+part pv.01 --size=1 --grow --encrypt
 volgroup vg_root pv.01
 logvol / --vgname vg_root --name root --fstype=ext4 --size=10240
 logvol /tmp --vgname vg_root --name tmp --size=500 --fsoptions="nodev,nosuid,noexec"
@@ -29,8 +29,7 @@ keyboard --vckeymap=us --xlayouts='us'
 lang en_US.UTF-8
 
 # Use a network install
-# url --url="http://mirror.math.princeton.edu/pub/fedora/linux/releases/test/30_Beta/Workstation/x86_64/os/"
-url --url="http://mirror.math.princeton.edu/pub/fedora/linux/releases/29/Workstation/x86_64/os/"
+url --url="http://mirror.math.princeton.edu/pub/fedora/linux/releases/30/Workstation/x86_64/os/"
 
 # Network information
 network  --hostname=localhost.localdomain --onboot yes --device eth0 --bootproto dhcp --ipv6 auto
@@ -57,6 +56,9 @@ selinux --enforcing
 
 %packages --ignoremissing
 @^minimal-environment
+clevis
+clevis-dracut
+clevis-luks
 # @guest-agents
 %end
 
