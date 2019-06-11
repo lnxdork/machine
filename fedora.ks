@@ -1,7 +1,7 @@
 #version=DEVEL
 zerombr
 # ignoredisk --only-use=sda
-ignoredisk --only-use=vda
+# ignoredisk --only-use=vda
 # autopart --type=lvm
 
 # Partition clearing information
