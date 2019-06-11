@@ -29,7 +29,7 @@ keyboard --vckeymap=us --xlayouts='us'
 lang en_US.UTF-8
 
 # Use a network install
-url --url="http://mirror.cisp.com/CentOS/7.6.1810/os/x86_64/"
+url --url="http://mirror.cisp.com/CentOS/7/os/x86_64/"
 
 # Network information
 network  --hostname=localhost.localdomain --onboot yes --device eth0 --bootproto dhcp --ipv6 auto
