@@ -1,0 +1,11 @@
+
+[framework/core]
+ConsoleLogging=True
+LogLevel=2
+SessionLogging=True
+PromptTimeFormat=%b%d %H:%M:%S
+Prompt=%blu%T%whi|%grn%L%clr|S:%red%S%clr J:%red%%J%clr
+TimeStampOutput=True
+Threads=50
+Verbose=True
+
