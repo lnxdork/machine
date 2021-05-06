@@ -2,7 +2,7 @@
 
 # install veracrypt
 # paths
-mp='/home/lnxdork/Downloads/'
+mp='/home/unknown/Downloads/'
 
 # install veracrypt
 wget -P ${mp}veracrypt/ https://launchpad.net/veracrypt/trunk/1.23/+download/veracrypt-1.23-setup.tar.bz2 

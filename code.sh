@@ -2,7 +2,7 @@
 
 # install code
 # paths
-mp='/home/lnxdork/Downloads/'
+mp='/home/unknown/Downloads/'
 
 # install code
 # https://vscode-update.azurewebsites.net/latest/linux-rpm-x64/stable

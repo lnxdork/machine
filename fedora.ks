@@ -79,7 +79,7 @@ dnf install i3lock i3status dmenu i3 powerline xfce4-terminal bash-completion -y
 # add config files to start X11
 curl -sSL https://raw.githubusercontent.com/lnxdork/machine/master/20-intel.conf > /etc/X11/xorg.conf.d/20-intel.conf
 curl -sSL https://raw.githubusercontent.com/lnxdork/machine/master/xorg.conf > /etc/X11/xorg.conf
-echo "exec i3" > /home/lnxdork/.xinitrc
+echo "exec i3" > /home/unknown/.xinitrc
 
 # basic security policy stuff
 echo "Authorized use only. All activity may be monitored and reported." > /etc/motd
